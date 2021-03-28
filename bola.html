@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="CSS/stylebola.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Title -->
+    <title>3D Calculator</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#">3D Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="silinder.html">Silinder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kerucut.html">Kerucut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bola.html">Bola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rumus.html">Rumus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menghitung luas permukaan dan volume bola-->
+    <form>
+        <div class="container">
+            <div style="margin-top: 100px">
+                <h2>Menghitung Luas Permukaan dan Volume Bola</h2>
+                <img src="images/welcome.jpg" class="d-block w-80" alt="..." />
+            </div>
+            <div class="row ms-auto">
+                <label for="colFormLabelSm" class="col-auto col-form-label col-form-label-sm">Masukkan jari-jari bola (dalam meter)</label>
+                <div class="col-auto" id="id_r">
+                    <input type="number" min="1" class="form-control" id="id_colFormLabelr" placeholder="Input only number" aria-describedby="colFormLabelrFeedback" required />
+                </div>
+            </div>
+            <div><input type="button" class="btn btn-primary" id="btnHitung" value="Hitung!" onclick="hitungBola();" /></div>
+            <script src="rumus.js">
+                hitungBola()
+            </script>
+            <div style="margin-top: 20px">
+                <h2>Hasil Perhitungan</h2>
+            </div>
+            <div style="margin-top: 20px">Luas permukaan: <input type="number" min="0" id="txtLuas" name="txtLuas" readonly /> meter persegi</div>
+            <div style="margin-top: 20px">Volume: <input type="number" min="0" id="txtVolume" name="txtVolume" readonly /> meter kubik</div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>

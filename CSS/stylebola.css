@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  width: 800px;
+}
+form {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Title -->
+    <title>3D Calculator</title>
+</head>
+
+<body>
+    <!-- Input nama Javascript -->
+    <script src="index.js">
+        inputName()
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#">3D Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="silinder.html">Silinder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kerucut.html">Kerucut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bola.html">Bola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rumus.html">Rumus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 id="id_jumbotron"></h1>
+            <script>
+                inputName();
+            </script>
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 0"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/welcome2.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Selamat Datang di 3D Calculator</h1>
+                    <h4>3D Calculator merupakan website yang dapat membantu anda untuk mnghitung luas permukaan dan volume bangun ruang 3 dimensi.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/welcome3.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Bangun ruang yang dapat dihitung menggunakan 3D Calculator antara lain:</h1>
+                    <h3>Silinder, Kerucut, dan Bola</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/silinder.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Menghitung Luas Permukaan dan Volume dari Silinder</h1>
+                    <h4>3D Calculator dapat membantu anda menghitung luas permukaan dan volume silinder dengan cepat dan tepat.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/kerucut.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Menghitung Luas Permukaan dan Volume dari Kerucut</h1>
+                    <h4>3D Calculator dapat membantu anda menghitung luas permukaan dan volume kerucut dengan cepat dan tepat.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/bola.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Menghitung Luas Permukaan dan Volume dari Bola</h1>
+                    <h4>3D Calculator dapat membantu anda menghitung luas permukaan dan volume bola dengan cepat dan tepat.</h4>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 style="margin-top: 50px">Mari Berkenalan dengan Bangun Ruang Tiga Dimensi Silinder, Kerucut, dan Bola!</h1>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md">
+                <div class="card">
+                    <img src="images/cylinder.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Silinder</p>
+                    </div>
+                </div>
+                <p>
+                    Silinder adalah bangun ruang 3D yang dibentuk oleh 2 buah lingkaran identik yang menjadi alas dan tutup silinder serta sebuah persegi panjang yang menyelimutinya yang disebut selimut silinder. Silinder memiliki 3 sisi dan 2 rusuk.
+                </p>
+            </div>
+
+            <div class="col-md">
+                <div class="card">
+                    <img src="images/cone.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Kerucut</p>
+                    </div>
+                </div>
+                <p>Kerucut adalah sebuah limas istimewa yang beralas lingkaran. Kerucut memiliki 2 sisi, 1 rusuk, dan 1 titik sudut. Sisi tegak kerucut tidak berupa segitiga tapi berupa bidang miring yang disebut selimut kerucut.</p>
+            </div>
+
+            <div class="col-md">
+                <div class="card">
+                    <img src="images/sphere.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-text">Bola</p>
+                    </div>
+                </div>
+                <p>Bola adalah bangun ruang tiga dimensi yang dibentuk oleh tak hingga lingkaran berjari-jari sama panjang dan berpusat pada satu titik yang sama. Bola hanya memiliki 1 sisi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center">
+        Background from <a href="https://www.freepik.com" title="Freepik">Freepik</a> and Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>

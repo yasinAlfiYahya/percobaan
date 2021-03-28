@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* style jumbotron */
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+img {
+  width: 800px;
+}
+form {
+  margin-bottom: 15px;
+}
